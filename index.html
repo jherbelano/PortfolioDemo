@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/cv.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b05f0436ab.js" crossorigin="anonymous"></script>
+    <script src="js/response.js"></script>
+    <script src="js/rain.js"></script>
+    <script src="js/slideshow.js"></script>
+    <title>Jher's Portfolio</title>
+</head>
+<body>
+    <div class="banner" id="home">
+        <div id="rain-container"></div>
+        <div class="banner-content">
+            <h2>I'm Jher</h2>
+            <h1>Software Developer</h1>
+            <h3>
+                <div class="span-content">
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis omnis sunt officia sapiente repellat quo doloremque! Sequi, hic nobis?
+                    </span>
+                </div>
+            </h3>
+            <a class="btn-start" href="#start">LET'S START</a>
+        </div>
+    </div>
+    <div class="header" id="start">
+        <div class="logo">
+            <a href="#"><img src="img/Me.png" alt="">Jher</a>
+        </div>
+        
+        <div class="menu-toggle" onclick="menuClicked()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 200 200">
+                <g stroke-width="6.5" stroke-linecap="round">
+                    <path
+                      d="M72 82.286h28.75"
+                      fill="#009100"
+                      fill-rule="evenodd"
+                      stroke="#2c3137"
+                    />
+                    <path
+                      d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                      fill="none"
+                      stroke="#2c3137"
+                    />
+                    <path
+                      d="M72 125.143h28.75"
+                      fill="#009100"
+                      fill-rule="evenodd"
+                      stroke="#2c3137"
+                    />
+                    <path
+                      d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                      fill="none"
+                      stroke="#2c3137"
+                    />
+                    <path
+                      d="M100.75 82.286h28.75"
+                      fill="#009100"
+                      fill-rule="evenodd"
+                      stroke="#2c3137"
+                    />
+                    <path
+                      d="M100.75 125.143h28.75"
+                      fill="#009100"
+                      fill-rule="evenodd"
+                      stroke="#2c3137"
+                    />
+                </g>
+            </svg>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home" data-text="Home" onclick="menuClicked()">Home</a></li>
+                <li><a href="#about" data-text="About Me" onclick="menuClicked()">About Me</a></li>
+                <li><a href="#skills" data-text="Skills" onclick="menuClicked()">Skills</a></li>
+                <li><a href="#projects" data-text="Projects" onclick="menuClicked()">Projects</a></li>
+                <li><a href="#contact" data-text="Contact Me" onclick="menuClicked()">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="content" id="about">
+        <div class="title">
+            <h2>About Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-photo">
+            <a href="#"><img src="img/Me.png" alt=""></a>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut necessitatibus unde explicabo sint eius accusamus vitae in vero modi tenetur, eligendi libero ab, expedita repudiandae sapiente dolores illum. Beatae perferendis aliquid, accusantium quaerat minus, eum error laborum, explicabo asperiores quae illo consequatur. Commodi autem nisi consequuntur repellendus exercitationem? Perferendis nobis dicta aperiam magni neque culpa libero cumque sit nostrum.
+        </p>
+    </div>
+    <div class="verse-container">
+        <img alt="road" src="img/peakpx.jpg">
+        <div class="waterdrop reverse"></div>
+        <div class="slideshow-container">
+            <div class="mySlides">
+              <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+              <p class="verse">- John Keats</p>
+            </div>
+            
+            <div class="mySlides">
+              <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+              <p class="verse">- Ernest Hemingway</p>
+            </div>
+            
+            <div class="mySlides">
+              <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+              <p class="verse">- Thomas A. Edison</p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+    <div id="skills">
+        <div class="title">
+            <h2>Skills & Technology</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-logo">
+                <img src="img/skills/html-5.png" alt="html logo">
+                <p>HTML</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/css-3.png" alt="css logo">
+                <p>CSS</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/js.png" alt="javascript logo">
+                <p>Javascript</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/bootstrap.png" alt="bootstrap logo">
+                <p>Bootstrap</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/react.png" alt="react logo">
+                <p>React</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/angular.png" alt="angular logo">
+                <p>Angular</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/Csharp.png" alt="c# logo">
+                <p>C#</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/aspNet.png" alt="asp.net logo">
+                <p>ASP.Net</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/nodejs.png" alt="nodejs logo">
+                <p>NodeJs</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/sqlserver.png" alt="sql server logo">
+                <p>SQL Server</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/mongoDB.png" alt="mongoDB logo">
+                <p>MongoDB</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/mysql.png" alt="mysql logo">
+                <p>MySQL</p>
+            </div>
+            <div class="skill-logo">
+                <img src="img/skills/photoshopp.png" alt="photoshop logo">
+                <p>Photoshop</p>
+            </div>
+        </div>
+    </div>
+    <div id="projects"> 
+        <div class="title">
+            <h2>Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="img/projects/foodmenu.jpg" alt="food menu">
+                <div class="card-details">
+                    <div class="card-title">
+                        <h3>Food Menu</h3>
+                    </div>
+                    <div class="card-description">
+                        <div class="technologies">
+                            <strong>Technologies:</strong> HTML, CSS, Javascript, React
+                        </div>
+                        <p>Description of your project goes here. Provide a brief overview of what the project is about, technologies used, and any other relevant details.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/projects/QuotesAPI.jpg" alt="Quotes API">
+                <div class="card-details">
+                    <div class="card-title">
+                        <h3>Quotes API</h3>
+                    </div>
+                    <div class="card-description">
+                        <div class="technologies">
+                            <strong>Technologies:</strong> HTML, CSS, Javascript, React
+                        </div>
+                        <p>Description of your project goes here. Provide a brief overview of what the project is about, technologies used, and any other relevant details.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/projects/taco.jpg" alt="taco">
+                <div class="card-details">
+                    <div class="card-title">
+                        <h3>Taco</h3>
+                    </div>
+                    <div class="card-description">
+                        <div class="technologies">
+                            <strong>Technologies:</strong> HTML, CSS, Javascript, React
+                        </div>
+                        <p>Description of your project goes here. Provide a brief overview of what the project is about, technologies used, and any other relevant details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="contact">
+        <div class="title">
+            <h2>Contact Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <div class="input-container">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-container">
+                    <input type="mail" id="email" name="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-container">
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <label for="name">Your Message</label>
+                </div>
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+          </div>
+    </div>
+    <div class="waterdrop reverse no-height"></div>
+    <div class="content dark-background">
+        <div class="footer-container">
+            <ul class="social-icon">
+                <li class="social-item">
+                    <a href="https://www.facebook.com/jher.belano/" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://twitter.com/bob20042726" target="_blank">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.linkedin.com/in/jeramine-belano-39b63224a/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://github.com/jherbelano" target="_blank">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <p>
+                copyright &copy; Jher Belano 
+                <span id="date">
+                    2024
+                </span> . all rights reserved
+            </p>
+        </div>
+    </div>
+    <a href="#home" id="btnUp">
+        <i class="fa-sharp fa-solid fa-arrow-up fa-beat-fade fa-xs"></i>
+    </a>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/raindrop.js"></script>
+
+<script> 
+    jQuery('.waterdrop').raindrops({color:'#FFFFFF', canvasHeight:150, density: 0.1, frequency: 20});
+</script>
+</html>

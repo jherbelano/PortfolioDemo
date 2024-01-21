@@ -1,0 +1,38 @@
+@keyframes animatewords {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        height: 0;
+    }
+    to {
+        height: auto; 
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translateX(-2px) rotate(0deg);
+    }
+    20%, 80% {
+      transform: translateX(4px) rotate(0deg);
+    }
+    30%, 50%, 70% {
+      transform: translateX(-4px) rotate(-1deg);
+    }
+    40%, 60% {
+      transform: translateX(4px) rotate(1deg);
+    }
+  }

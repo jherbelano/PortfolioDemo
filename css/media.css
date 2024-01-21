@@ -1,10 +1,14 @@
-@media only screen and (max-width: 1000px){
-    .content{
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .content, #skills{
         padding:20px 150px;
     }
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 991px){
+    .content, #skills{
+        padding:20px 100px;
+    }
+
     .banner-content{
         width:70%;
       }
@@ -15,34 +19,6 @@
 
     .span-content{
         font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    .content{
-        padding:20px 100px;
-    }
-
-    .banner-content{
-        width:80%;
-    }
-}
-
-@media only screen and (max-width: 700px){
-    .banner-content{
-        width:85%;
-    }
-
-    .banner-content > h1{
-        font-size: 3rem;
-    }
-
-    .banner-content > h2{
-        font-size: 2.5rem;
-    }
-
-    .span-content{
-        font-size: 1.5rem;
     }
 
     .menu-toggle{
@@ -121,108 +97,14 @@
         width: 1800px;
         height: 1800px;
       }
-    
-    .content{
-        padding:20px 80px;
-    }
-
-    .skill-logo {
-        flex: 20%;
-    }
-
-    .project-card h3{
-        font-size: 1rem;
-    }
-
-    .project-card .card-details{
-        font-size: 0.9rem;
-    }
 }
 
-@media only screen and (max-width: 600px){
-    .content{
-        padding:20px 60px;
+@media only screen and (max-width: 767px){
+    .content, #skills{
+        padding:20px 50px;
     }
 
     .banner-content{
-        width:95%;
+        width:80%;
     }
-}
-
-@media only screen and (max-width: 500px){
-    .banner-content > h1{
-        font-size: 2.5rem;
-    }
-
-    .banner-content > h2{
-        font-size: 2rem;
-    }
-
-    .span-content{
-        font-size: 1rem;
-    }
-
-    .menu.active ul li a:before {
-        font-size: 2.5em;
-      }
-
-    .content{
-        padding:20px 15px;
-    }
-
-    .skill-logo {
-        flex: 25%;
-      }
-}
-
-@media only screen and (max-width: 400px){
-     .project-card h3{
-        font-size: 0.8rem;
-    }
-
-    .project-card .card-details{
-        font-size: 0.7rem;
-    }
-
-    .contact-form-container{
-        width: 75%;
-      }
-}
-
-@media only screen and (max-width: 300px){
-    .banner-content > h1{
-        font-size: 2rem;
-    }
-
-    .banner-content > h2{
-        font-size: 1.5rem;
-    }
-
-    .span-content{
-        font-size: 0.9rem;
-    }
-
-    .menu.active ul li a:before {
-        font-size: 1.5em;
-      }
-    
-    .content{
-        padding:20px 5px;
-    }
-
-    .skill-logo {
-        flex: 50%;
-      }
-    
-    .project-card h3{
-        font-size: 0.9rem;
-    }
-
-    .project-card .card-details{
-        font-size: 0.8rem;
-    }
-
-    .contact-form-container{
-        width: 85%;
-      }
 }

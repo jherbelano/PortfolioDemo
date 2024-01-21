@@ -488,8 +488,7 @@ q {font-style: italic;}
   display: none;
 }
 
-  font-family: var(--body-font);
-} */
+ 
 /* -------------- CONTACT ME -------------- */
 
 #contact {
@@ -544,7 +543,7 @@ q {font-style: italic;}
   padding:8px 0 5px 0;
   font-family: var(--body-font);
   font-size:16px;
-  color:var(--text-color);
+  color:var(--dark-color);
   margin-bottom: 5px;
 }
 
@@ -552,7 +551,7 @@ q {font-style: italic;}
 .input-container textarea:focus{ 
  border:none;	
  outline:none;
- border-bottom:1px solid var(--text-color);	
+ border-bottom:1px solid var(--dark-color);	
 }
 
 .input-container input:focus ~ label,

@@ -24,6 +24,7 @@
     .menu-toggle{
         float: right;
         display:block;
+        background-color: var(--text-color);
     }
 
     .menu{
@@ -60,9 +61,9 @@
         padding: 10px 16px;
         display: block;
         text-align: center;
-        color: var(--disable-color);
+        color: var(--light-color);
     }
-
+    
     .menu.active ul li:hover a {
         color:var(--dark-color);
         background: transparent;
